@@ -1,0 +1,10 @@
+gcc balcao.c -pthread balcao.h balcaofunc.c  servico.h -o balcao
+
+gcc medico.c -pthread medico.h servico.h -o medico
+
+gcc cliente.c cliente.h servico.h -o cliente
+
+
+export MAXCLIENTES=5
+
+export MAXMEDICOS=5
